@@ -2,18 +2,18 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
-    <OutpuType>Exe</OutputType>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="lib\Microsoft.ProjectOxford.Vision.dll" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.1.0-preview" />
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.SignalRService" Version="1.0.0-preview1-10025" />    
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
-    <
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.CosmosDB" Version="3.0.3" />
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.SignalRService" Version="1.7.0" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.2" />    
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" OutputItemType="Analyzer" />
+	<PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.10.0" />
+	<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.CosmosDB" Version="3.0.9" />
+	<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Storage" Version="5.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ProjectOxford.Vision">
